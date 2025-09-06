@@ -837,19 +837,138 @@ nav ul li a.active {
 }
 
 .pricing .cards {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-/* .pricing .cards .card {
+.pricing .cards .card {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  width: 350px;
+}
+.pricing .cards .card h2 {
+  color: #3a517c;
+  margin-bottom: 20px;
+}
+.pricing .cards .card .top p {
+  color: #3a517c;
+  font-size: 60px;
+}
+.pricing .cards .card .top sup {
+  font-size: 40px;
+}
+.pricing .cards .card .top p:last-child {
+  color: #61a0c6;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.pricing .cards .card ul {
+  list-style: none;
+  margin-bottom: 50px;
+}
+.pricing .cards .card ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pricing .cards .card ul li img {
+  width: 40px;
+}
+.pricing .cards .card button {
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+  color: white;
+  background-color: #61a0c6;
+}
+
+.freequently {
+  padding: 0 90px;
+  margin-top: 92px;
+}
+
+.freequently header {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: #3a517c;
+}
+
+.freequently header h2 {
+  font-size: 50px;
+}
+.freequently header p {
+  font-size: 16px;
+  width: 1200px;
+}
+
+.freequently header .big-line {
+  margin: 30px auto;
+  width: 150px;
+  height: 2px;
+  background-color: gray;
+  opacity: 30%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
+}
 
-} */
-.pricing .cards .card ul {
-  list-style-type: none;
-  list-style-image: url("../img/check.png");
+.freequently header .mini-line {
+  margin: 0 auto;
+  width: 50px;
+  height: 2px;
+  background-color: cyan;
+}
+
+.freequently header .big-line :nth-child(2),
+.freequently header .big-line :nth-child(3) {
+  display: none;
+}
+
+.freequently .cards .card {
+  background-color: white;
+margin-bottom: 50px;
+  padding: 10px 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.freequently .cards .card.active .top {
+  color: turquoise;
+}
+.freequently .cards .card.active .top .dir{
+ transform: rotate(90deg);
+}
+
+.freequently .cards .card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.freequently .cards .card .top .contnet {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.freequently .cards .card .top .contnet span {
+  color: turquoise;
+}
+
+.freequently .cards .card .top .dir {
+  transform: rotate(-90deg);
+  font-size: 20px;
+}
+
+.freequently .cards .card .parghraf {
+  font-size: 18px;
+  opacity: 60%;
+
 }
