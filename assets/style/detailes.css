@@ -82,6 +82,11 @@ nav ul li a.active {
     color: #61a0c6;
 }
 
+nav .fa-bars {
+    display: none;
+    cursor: pointer;
+}
+
 .hero {
     padding: 20px 90px;
     margin-top: 90px;
@@ -112,6 +117,7 @@ nav ul li a.active {
     align-content: center;
     gap: 30px;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .info .big-line {
@@ -142,6 +148,7 @@ nav ul li a.active {
 .info img {
     width: 50%;
     height: 100%;
+    min-width: 300px;
 }
 
 .info .right .box {
@@ -250,4 +257,30 @@ footer .content2 p {
 footer .content2 .links {
     display: flex;
     gap: 30px;
+
+}
+
+
+@media screen and (max-width: 992px) {
+    nav {
+        padding: 0 10px;
+    }
+
+    nav ul,
+    nav button {
+        display: none;
+    }
+
+    nav .fa-bars {
+        display: block;
+    }
+
+    .hero {
+        padding: 0 10px;
+    }
+    .info{
+        padding: 0 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
